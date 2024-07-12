@@ -1,0 +1,132 @@
+.Main {
+    padding: 150px 0;
+    z-index: -1;
+}
+
+.main__container {
+    border-radius: 24px;
+    background: url(../../assets/img/hero-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0px 40px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main__title {
+    color: rgb(31, 37, 51);
+    font-size: 48px;
+    font-weight: 600;
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+.main__text {
+    color: rgb(31, 37, 51);
+    font-size: 16px;
+    font-weight: 300;
+    width: 560px;
+    margin-bottom: 20px;
+}
+
+.main__right {
+    position: relative;
+}
+
+.miniature__btm {
+    position: absolute;
+    z-index: 0;
+    left: 100px;
+    bottom: -50px;
+}
+
+.main__prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    img {
+        padding-right: 20px;
+    }
+
+    h2 {
+        padding-right: 20px;
+        color: rgb(31, 37, 51);
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+
+    h4 {
+        color: rgb(112, 115, 124);
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: line-through;
+    }
+}
+
+.main__btns {
+    display: flex;
+    align-items: center;
+
+    .main__add {
+        margin-right: 30px;
+        border-radius: 8px;
+        background: rgb(53, 151, 64);
+        width: 153px;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .main__discover {
+        margin-right: 30px;
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        width: 153px;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: rgb(53, 151, 64);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+
+    }
+}
+
+
+.hero__down {
+    background: url(../../assets/img/hero-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    margin: 50px 0;
+    padding: 20px 0;
+}
+
+.hero__down__title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1F2533;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero__down__text {
+    font-size: 17px;
+    font-weight: 500;
+    color: #1F2533;
+    text-align: center;
+}

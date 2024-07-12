@@ -1,0 +1,108 @@
+.Product {
+    padding: 0 0 100px 0;
+}
+
+.product__title {
+    color: rgb(31, 37, 51);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.product__text {
+    color: rgb(53, 151, 64);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 40px;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+
+.product__text__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.product__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__btn {
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    padding: 20px;
+    width: auto;
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(31, 37, 51);
+    font-size: 14px;
+    font-weight: 400;
+    background: transparent;
+    cursor: pointer;
+}
+
+.product__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.product__item {
+    position: relative;
+    width: 350px;
+    padding: 28px;
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 8px;
+
+    img {
+        width: 294px;
+        height: 294px;
+        margin-bottom: 20px;
+    }
+}
+
+.product__item__title {
+    color: rgb(31, 37, 51);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -4%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.product__price {
+    color: rgb(31, 37, 51);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.setlike {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid rgb(239, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 1px;
+
+    img {
+        width: 23px;
+        height: 19px;
+        cursor: pointer;
+    }
+}
