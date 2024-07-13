@@ -1,0 +1,60 @@
+.Thing{
+    padding-top: 200px;
+}
+
+.thing__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.thing__div{
+    width: 70%;
+    height: 65px;
+    background: transparent;
+    border: 2px solid #efefef;
+    border-radius: 71px;
+    display: flex;
+    padding-left: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+.thing__inp{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.thing__select{
+    width: 25%;
+    margin-left: 30px;
+}
+
+.thing__select{
+    border-radius: 71px;
+    border: 2px solid #efefef;
+    height: 65px;
+    padding-left: 33px;
+    -webkit-appearance: none; /* Safari uchun */
+    -moz-appearance: none; /* Firefox uchun */
+    appearance: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    option{
+        background: white;
+    }
+}

@@ -15,6 +15,7 @@ function Header() {
     const [confirmLoading, setConfirmLoading] = useState(false);
     const [likedItems, setLikedItems] = useState([]);
 
+
     useEffect(() => {
         const saved = localStorage.getItem('likedItems');
         if (saved) {
@@ -42,18 +43,18 @@ function Header() {
         <div className='Header'>
             <div className="container">
                 <nav className='header__nav'>
-                    <Link>
+                    <Link to={'/'}>
                         <img src={logo} alt="" />
                     </Link>
 
                     <ul className='header__list'>
                         <li className='header__item'>
-                            <Link>
+                            <Link to={'/products'}>
                                 ALL PRODUCTS
                             </Link>
                         </li>
                         <li className='header__item'>
-                            <Link>
+                            <Link >
                                 ABOUT SEEDRA
                             </Link>
                         </li>

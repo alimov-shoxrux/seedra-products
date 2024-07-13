@@ -50,7 +50,6 @@
 .product__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
     row-gap: 50px;
     margin-top: 50px;
 }
@@ -103,6 +102,26 @@
     img {
         width: 23px;
         height: 19px;
+        cursor: pointer;
+    }
+}
+
+.product__korzinka {
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    img {
+        width: 24px;
+        height: 24px;
         cursor: pointer;
     }
 }

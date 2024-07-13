@@ -1,0 +1,67 @@
+.helps__seedra {
+    margin-top: 63px;
+}
+
+.grow__box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.efficant {
+    h1 {
+        margin-top: 63px;
+        margin-left: 165px;
+        color: rgb(31, 37, 51);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 54px;
+    }
+
+    p {
+        margin-top: 30px;
+        margin-left: 165px;
+        color: rgb(31, 37, 51);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:375px) {
+    .efficant {
+        h1 {
+            
+            margin: 0;
+            font-size: 36px;
+            margin-left: 11px;
+        }
+        p{
+            margin: 0;
+            margin-left: 11px;
+        }
+    }
+
+    .grow__box {
+        display: block;
+    }
+    .opa__image{
+        width: 284px;
+        height: 284px;
+        margin-left: 25px;
+    }
+}

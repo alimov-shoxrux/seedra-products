@@ -1,0 +1,456 @@
+.Blog {
+    padding: 0 0 100px 0;
+}
+
+.blog__introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.blog__title {
+    color: rgb(31, 37, 51);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.blog__page {
+    color: rgb(53, 151, 64);
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 168px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.blog__left {
+    width: 70%;
+
+}
+
+.blog__right {
+    width: 30%;
+}
+
+.blog__left__first {
+    background: url(../../assets//img/blog-left-fisrt.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    width: 70%;
+    height: 300px;
+    width: 830px;
+}
+
+
+.blog__left__clock {
+    color: rgb(112, 115, 124);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.blog__left__intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    img {
+        margin-top: -15px;
+    }
+}
+
+.blog__left__title {
+    color: rgb(31, 37, 51);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.blog__left__text {
+    color: rgb(112, 115, 124);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    line-height: 178.19%;
+}
+
+.blog__left__btn {
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 104px;
+    height: 50px;
+    color: rgb(53, 151, 64);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog__right {
+    width: 30%;
+    background: url(../../assets/img/blog-right-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    padding: 30px;
+}
+
+.blog__right__title {
+    color: rgb(31, 37, 51);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.blog__right__text {
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 178.19%;
+}
+
+
+.blog__right__btn {
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 104px;
+    height: 50px;
+    color: rgb(53, 151, 64);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog__left__twice {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.blog__left__second {
+    background: url(../../assets/img/blog-left-two.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    margin-right: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+.blog__left__third {
+    background: url(../../assets/img/blog-left-two.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    padding: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+.blog__left__twice__title {
+    color: rgb(31, 37, 51);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.5px;
+    width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.out__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 86px;
+}
+
+.carla__box {
+    width: 540px;
+    height: 347px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 12px;
+    box-shadow: 0px 4px 21px 0px rgba(209, 209, 209, 0.25);
+    background: rgb(255, 255, 255);
+}
+
+.carla {
+    display: flex;
+    margin-top: 35px;
+    margin-left: 34px;
+
+    h1 {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 24px;
+    }
+
+    p {
+        color: rgb(112, 115, 124);
+        font-family: Lexend;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 24px;
+    }
+}
+
+.carla__des {
+    margin-top: 27px;
+    margin-left: 34px;
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.stars2 {
+    margin-top: 10px;
+    margin-left: 36px;
+}
+
+.conteant22 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 44px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0.5;
+}
+
+.half {
+    position: relative;
+}
+
+.buttons__btn {
+    margin-top: 72px;
+    margin-left: 45%;
+
+}
+
+.grren__btn1 {
+    width: 35px;
+    height: 6px;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.grren__btn2 {
+    width: 35px;
+    height: 6px;
+    background-color: gray;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.grren__btn3 {
+    width: 35px;
+    height: 6px;
+    background-color: gray;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.active-button {
+    background-color: green;
+}
+
+@media (max-width: 375px) {
+    .our__box {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 48px;
+
+        h1 {
+            margin-top: 38px;
+            position: absolute;
+            width: 89px;
+            height: 34px;
+            left: 15px;
+            right: 271px;
+            top: 1706px;
+            bottom: 2286px;
+            color: rgb(31, 37, 51);
+            font-family: Lexend;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 54px;
+            letter-spacing: -5%;
+            text-align: left;
+        }
+
+        button {
+            position: absolute;
+            width: 158px;
+            height: 47px;
+            left: 200px;
+            top: 1699px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 48px;
+            align-items: center;
+            padding-left: 33px;
+            margin-left: -11px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .our__box12 {
+        width: 317px;
+        height: 400px;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        margin-top: 32px;
+        margin-left: 11px;
+
+    }
+
+    .kbrg__picture {
+        width: 222px;
+        height: 227px;
+    }
+
+    .our__boxs {
+        display: block;
+        margin: 0;
+
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .our__box3 {
+        display: none;
+    }
+
+    .kbrg__image {
+        width: 222px;
+        height: 227px;
+        margin-top: -80px;
+        margin-left: 126px;
+    }
+
+    .boxs__boxs {
+        margin-left: -165px;
+        display: none;
+    }
+
+    .our__box2 {
+        display: none;
+        margin: 0;
+        margin-left: -165px;
+    }
+
+    .out__title {
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 54px;
+        letter-spacing: -5%;
+        text-align: left;
+        margin-left: 11px;
+    }
+
+    .carla__box {
+        width: 318px;
+        height: 374px;
+        overflow: hidden;
+        margin-left: 11px;
+    }
+
+    .carla {
+        img {
+            width: 44px;
+            height: 44px;
+        }
+
+        h1 {
+            color: rgb(31, 37, 51);
+            font-family: Lexend;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: -4%;
+            text-align: left;
+        }
+    }
+
+    #div2 {
+        display: none;
+    }
+
+    #div3 {
+        display: none;
+    }
+
+    .grren__btn1,
+    .grren__btn2,
+    .grren__btn3 {
+        display: none;
+    }
+
+    .carla__des {
+        width: 283px;
+        height: 112px;
+        color: rgb(31, 37, 51);
+        font-family: Lexend;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0%;
+        overflow: hidden;
+    }
+}
