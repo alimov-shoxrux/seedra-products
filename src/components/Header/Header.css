@@ -13,6 +13,11 @@
     align-items: center ;
 }
 
+.cart__btn{
+    background: transparent;
+    border: none;
+}
+
 .header__list {
     display: flex;
     justify-content: space-between;

@@ -1,3 +1,4 @@
+// src/components/Product/Product.js
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
@@ -24,10 +25,18 @@ function Product() {
         const saved = localStorage.getItem('likedItems');
         return saved ? JSON.parse(saved) : [];
     });
+    const [cartItems, setCartItems] = useState(() => {
+        const saved = localStorage.getItem('cartItems');
+        return saved ? JSON.parse(saved) : [];
+    });
 
     useEffect(() => {
         localStorage.setItem('likedItems', JSON.stringify(likedItems));
     }, [likedItems]);
+
+    useEffect(() => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }, [cartItems]);
 
     const toggleLike = (item) => {
         setLikedItems(prev => {
@@ -36,6 +45,21 @@ function Product() {
                 return prev.filter(likedItem => likedItem.id !== item.id);
             } else {
                 return [...prev, item];
+            }
+        });
+    };
+
+    const addToCart = (item) => {
+        setCartItems(prev => {
+            const isInCart = prev.some(cartItem => cartItem.id === item.id);
+            if (isInCart) {
+                return prev.map(cartItem =>
+                    cartItem.id === item.id
+                        ? { ...cartItem, quantity: cartItem.quantity + 1 }
+                        : cartItem
+                );
+            } else {
+                return [...prev, { ...item, quantity: 1 }];
             }
         });
     };
@@ -92,7 +116,7 @@ function Product() {
                 <ul className='product__list'>
                     {
                         filteredProducts.map((item, index) => (
-                            <li  key={index} className='product__item'>
+                            <li key={index} className='product__item'>
                                 <button className='setlike' onClick={() => toggleLike(item)}>
                                     <img src={likedItems.some(likedItem => likedItem.id === item.id) ? liked : like} alt="Like" />
                                 </button>
@@ -102,7 +126,7 @@ function Product() {
                                 </Flex>
                                 <h3 className='product__item__title'>{item.title}</h3>
                                 <h4 className='product__price'>$ {item.price}</h4>
-                                <div className="product__korzinka">
+                                <div className="product__korzinka" onClick={() => addToCart(item)}>
                                     <img src={korzinka} alt="Add to cart" />
                                 </div>
                             </li>
