@@ -1,0 +1,244 @@
+.container__box {
+    margin-top: -70px;
+}
+
+.Payment{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.korinmas__box {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.paymen__btn {
+    border: none;
+    background-color: white;
+}
+
+.payment__title2 {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: 13px;
+}
+
+.payment__btn1 {
+    width: 22px;
+    height: 6px;
+    border-radius: 30px;
+    background: gray;
+    margin-left: 131px;
+    cursor: pointer;
+    border: none;
+}
+
+.payment__btn2 {
+    width: 22px;
+    height: 6px;
+    border-radius: 30px;
+    background: gray;
+    border: none;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.payment__btn1.active,
+.payment__btn2.active {
+    background-color: green;
+}
+
+
+.type__des {
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.tolov__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.tolov__button12 {
+    width: 67px;
+    height: 43px;
+    border-radius: 4.04px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 198, 198);
+    text-align: center;
+
+    img {
+        margin-top: 8px;
+        width: 60px;
+        height: 30px;
+        size: cover;
+
+    }
+}
+
+.tolov__button123 {
+    width: 67px;
+    height: 43px;
+    border-radius: 4.04px;
+    background: rgb(255, 255, 255);
+    margin-left: 27px;
+    border: 1px solid rgb(202, 198, 198);
+
+    img {
+        margin-top: 8px;
+        width: 60px;
+        height: 30px;
+        size: cover;
+    }
+
+}
+
+.tolov__button124 {
+    width: 67px;
+    height: 43px;
+    border-radius: 4.04px;
+    background: rgb(255, 255, 255);
+    margin-left: 27px;
+    border: none;
+}
+
+.tolov__button125 {
+    width: 67px;
+    height: 43px;
+    border-radius: 4.04px;
+    background: rgb(255, 255, 255);
+    margin-left: 27px;
+    border: 1px solid rgb(202, 198, 198);
+    overflow: hidden;
+}
+
+.card__num {
+    margin-top: 27px;
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.card__input {
+    width: 446px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 4px;
+    margin-top: 8px;
+    padding-left: 24px;
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    outline: none;
+}
+
+.date__des {
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.expring {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.date__inp {
+    width: 214px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 4px;
+    padding-left: 24px;
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    outline: none;
+}
+
+.paymenchiz {
+    margin-top: 50px;
+}
+
+.total__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+}
+
+.total__des {
+    color: rgb(112, 115, 124);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.total__title {
+    color: rgb(31, 37, 51);
+    font-family: Lexend;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.continu {
+    display: flex;
+    align-items: center;
+    width: 447px;
+    height: 51px;
+    border-radius: 8px;
+    background: rgb(53, 151, 64);
+    margin-top: 32px;
+}
+
+.continu2 {
+    display: flex;
+    align-items: center;
+    margin-left: 269px;
+}
+
+.price__title {
+    color: rgb(255, 255, 255);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 21px;
+}
+
+.continu__title {
+    color: rgb(255, 255, 255);
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.continu__onga__btn {
+    margin-left: 12px;
+    border: none;
+    background-color: transparent;
+    padding-top: 3px;
+}

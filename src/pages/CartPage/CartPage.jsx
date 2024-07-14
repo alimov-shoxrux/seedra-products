@@ -1,6 +1,7 @@
 // src/pages/CartPage.js
 import React, { useState, useEffect } from 'react';
 import './CartPage.css';
+import { Link } from 'react-router-dom';
 
 function CartPage() {
     const [cartItems, setCartItems] = useState(() => {
@@ -57,6 +58,7 @@ function CartPage() {
                 </ul>
                 <div className="cart__summary">
                     <h3>Total: $ {cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}</h3>
+                    <Link  to={'/payment'}>Go to Payment</Link>
                 </div>
             </div>
         </div>

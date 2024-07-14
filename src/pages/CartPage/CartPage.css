@@ -77,3 +77,10 @@
     font-size: 24px;
     margin-bottom: 0;
 }
+
+.payment__link {
+    border: 2px solid #eee;
+    padding: 10px 20px;
+    margin-top: 50px;
+
+}

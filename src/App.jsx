@@ -9,6 +9,7 @@ import Ourblog from './pages/Ourblog/Ourblog'
 import Contact from './components/Contact/Contact'
 import LikePage from './pages/LikePage/LikePage'
 import CartPage from './pages/CartPage/CartPage'
+import Payment from './pages/Payment/Payment'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path="/like" element={<LikePage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path='/payment' element={<Payment/>}/>
       </Routes>
       <Footer />
     </div>
