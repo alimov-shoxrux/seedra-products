@@ -84,6 +84,6 @@ function Select() {
 
         </div>
     )
-}   
+}
 
 export default Select

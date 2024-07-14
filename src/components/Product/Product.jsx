@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Product.css';
-import { vegetable } from '../../lib/data'; // O'zgartiring, agar kerak bo'lsa
+import { vegetable } from '../../lib/data';
 import { Flex, Rate } from 'antd';
 const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
 
@@ -16,9 +16,10 @@ import like from '../../assets/img/like.svg';
 import liked from '../../assets/img/liked.svg';
 import korzinka from '../../assets/img/seedra-korzinka.svg';
 
-function Product({ sortOrder }) {
-    const navigation = useNavigate()
+function Product() {
+    const navigate = useNavigate();
 
+    const [category, setCategory] = useState('All');
     const [likedItems, setLikedItems] = useState(() => {
         const saved = localStorage.getItem('likedItems');
         return saved ? JSON.parse(saved) : [];
@@ -39,26 +40,13 @@ function Product({ sortOrder }) {
         });
     };
 
-    const [category, setCategory] = useState('All');
-    const [value, setValue] = useState(3);
-    const sortedVegetables = [...vegetable];
-
     const handleCategoryChange = (newCategory) => {
         setCategory(newCategory);
     };
 
-    const filteredProducts = sortedVegetables.filter((item) =>
+    const filteredProducts = vegetable.filter((item) =>
         (category === 'All' || item.category === category)
     );
-
-    const sortedProducts = filteredProducts.sort((a, b) => {
-        if (sortOrder === 'most-expensive') {
-            return b.price - a.price;
-        } else if (sortOrder === 'least-expensive') {
-            return a.price - b.price;
-        }
-        return 0;
-    });
 
     return (
         <div className='Product'>
@@ -66,7 +54,7 @@ function Product({ sortOrder }) {
                 <div className="product__text__container">
                     <h2 className='product__title'>Our products</h2>
                     <Link className='product__text'>
-                        View({sortedProducts.length})
+                        View({filteredProducts.length})
                     </Link>
                 </div>
 
@@ -103,14 +91,14 @@ function Product({ sortOrder }) {
 
                 <ul className='product__list'>
                     {
-                        sortedProducts.map((item, index) => (
-                            <li onClick={() => navigation(`/select/${item.id}`)} key={index} className='product__item'>
+                        filteredProducts.map((item, index) => (
+                            <li  key={index} className='product__item'>
                                 <button className='setlike' onClick={() => toggleLike(item)}>
                                     <img src={likedItems.some(likedItem => likedItem.id === item.id) ? liked : like} alt="Like" />
                                 </button>
-                                <img src={item.img} alt={item.title} />
+                                <img onClick={() => navigate(`/select/${item.id}`)} src={item.img} alt={item.title} />
                                 <Flex gap="middle" vertical>
-                                    <Rate tooltips={desc} onChange={setValue} value={value} />
+                                    <Rate tooltips={desc} />
                                 </Flex>
                                 <h3 className='product__item__title'>{item.title}</h3>
                                 <h4 className='product__price'>$ {item.price}</h4>

@@ -21,6 +21,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    overflow: hidden;
 
     img{
         width: 20px;
@@ -32,9 +33,10 @@
     border: none;
     background: transparent;
     outline: none;
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
 }
+
 
 .thing__select{
     width: 25%;
